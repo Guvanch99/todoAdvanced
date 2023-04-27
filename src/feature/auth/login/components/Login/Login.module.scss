@@ -1,0 +1,41 @@
+@import "src/shared/styles/common";
+
+%textDefault{
+  @include fontFamily(Rubik);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.wrapper{
+  width: 100%;
+  max-width: 308px;
+}
+
+.form{
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 16px 0 12px 0;
+}
+
+
+.text{
+  @extend %textDefault;
+  color: $grey500;
+  margin-top: 16px;
+}
+
+
+.button{
+  &:global(.MuiButtonBase-root){
+    min-width: 100%
+  }
+}

@@ -1,0 +1,43 @@
+@import "src/shared/styles/common";
+
+.wrapper{
+  padding: 0 16px 16px 16px;
+}
+
+.label{
+  @include fontFamily(Rubik);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  color: $black;
+  margin-bottom: 16px;
+}
+
+.textarea{
+  height: 180px;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.divider{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 8px;
+  margin-bottom: 8px;
+
+  @include media-sm-down {
+    grid-template-columns: 1fr;
+  }
+}
+
+.buttonGroup{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}

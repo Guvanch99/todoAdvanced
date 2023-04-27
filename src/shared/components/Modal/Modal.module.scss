@@ -1,0 +1,30 @@
+@import "../../styles/common";
+
+.modal{
+  &:global(.MuiDialog-root .paperModal.MuiPaper-root){
+    margin: 16px;
+    width: 100%;
+  }
+}
+
+.modalLarge{
+  &:global(.MuiDialog-root .paperModal.MuiPaper-root){
+    max-width: 892px;
+  }
+}
+
+.wrapper{
+  padding:  16px 0;
+}
+
+.iconWrapper{
+  all: unset;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: $black;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+

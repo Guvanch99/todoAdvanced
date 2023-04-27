@@ -1,0 +1,17 @@
+@import "src/shared/styles/common";
+
+.primaryButton{
+  &:global(.MuiButtonBase-root){
+    background: $green300;
+    color: $white;
+
+    &:disabled{
+      background: $green200;
+      color: $white;
+    }
+    &:hover{
+      background: $green400;
+    }
+  }
+
+}

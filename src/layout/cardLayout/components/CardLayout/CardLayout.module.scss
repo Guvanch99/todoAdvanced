@@ -1,0 +1,33 @@
+@import "src/shared/styles/common";
+
+.wrapper{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.wrapperCenter{
+  align-items: center;
+}
+
+.maxContainerSize{
+  max-width: none;
+}
+
+.label{
+  @include fontFamily(Rubik);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: $black;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.marginSmall{
+  margin-bottom: 4px;
+}
+

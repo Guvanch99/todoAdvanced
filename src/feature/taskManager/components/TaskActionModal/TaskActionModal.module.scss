@@ -1,0 +1,62 @@
+@import "src/shared/styles/common";
+
+.wrapper{
+  padding: 0 16px 16px 16px;
+}
+
+.title{
+  @include fontFamily(Rubik);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  color: $black;
+  margin-bottom: 16px;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.group{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+
+  @include media-sm-down {
+    grid-template-columns: 1fr;
+  }
+}
+
+.label{
+  @include fontFamily(Rubik);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: $black;
+}
+
+.value{
+  @include fontFamily(Rubik);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: $black;
+}
+
+.buttonGroup{
+  display: grid;
+  grid-template-columns: repeat(2, 90px);
+ justify-content: center;
+  gap: 16px;
+}

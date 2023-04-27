@@ -1,0 +1,22 @@
+@import "src/shared/styles/common";
+
+.wrapper{
+  display: flex;
+  justify-content: center;
+  background: $white;
+  width: 100%;
+  top: 0;
+  position: sticky;
+}
+
+.borderTopLine{
+  border-top: 1px solid $green300;
+}
+.borderBottomLine{
+  border-bottom: 1px solid $green300;
+}
+
+.content{
+  display: flex;
+  width: 100%;
+}

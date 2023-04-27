@@ -1,0 +1,31 @@
+@import "src/shared/styles/common";
+
+.card{
+  background: $white;
+  padding: 24px;
+  width: 100%;
+  box-shadow: 0 4px 20px rgba(117, 117, 117, 0.2);
+  border-radius: 8px;
+
+  @include media-sm-down {
+    padding: 16px;
+  }
+}
+
+
+
+.smallPadding{
+  padding: 16px 24px;
+
+  @include media-sm-down {
+    padding: 16px;
+  }
+}
+
+.noPadding{
+  padding: 0;
+
+  @include media-sm-down {
+    padding: 0
+  }
+}

@@ -1,0 +1,52 @@
+@import "src/shared/styles/common";
+
+.wrapper{
+  display: flex;
+}
+.content{
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 6px 4px 6px 8px;
+  width: 60px;
+  height: 36px;
+}
+
+.logoWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  background: $green300;
+  border-radius: 50%;
+  color: $white;
+}
+
+.bordered{
+  border: 1px solid $green300;
+  border-radius: 8px;
+}
+
+.icon{
+  display: flex;
+  justify-content: center;
+  margin-left: 4px;
+
+}
+
+.active{
+  color: $green300;
+}
+
+.logo{
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+

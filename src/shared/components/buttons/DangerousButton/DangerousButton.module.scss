@@ -1,0 +1,19 @@
+@import "src/shared/styles/common";
+
+.dangerousButton{
+  &:global(.MuiButtonBase-root){
+    background: $red;
+    color: $white;
+
+    &:disabled{
+      background: $pink;
+      color: $white;
+    }
+
+    &:hover{
+      color: $white;
+      background: $red200;
+    }
+
+  }
+}

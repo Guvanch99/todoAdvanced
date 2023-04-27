@@ -1,0 +1,61 @@
+@import "src/shared/styles/common";
+
+%priority{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.wrapper{
+  all: unset;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $green300;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.titleWrapper{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid $grey500;
+}
+
+.title{
+  @include fontFamily(Rubik);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: $black;
+
+}
+
+
+.description{
+  @include fontFamily(Rubik);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $black;
+}
+
+.low{
+  @extend %priority;
+  background: $green300;
+}
+
+.medium{
+  @extend %priority;
+  background: $orange;
+}
+
+.high{
+  @extend %priority;
+  background: $red500;
+}
+

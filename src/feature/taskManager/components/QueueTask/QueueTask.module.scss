@@ -1,0 +1,16 @@
+@import "src/shared/styles/common";
+.wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+
+  @include media-sm-down {
+    flex-direction: column;
+  }
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}

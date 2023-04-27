@@ -1,0 +1,49 @@
+@import "src/shared/styles/common";
+
+$cornerPaddingSum: 24px;
+
+
+.wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 8px  8px  8px  16px;
+
+
+  @include media-sm-down {
+    padding: 9px  8px  9px  16px;
+  }
+}
+
+.content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 586px;
+
+  @include media-sm-down {
+    flex-direction: column;
+    align-items:start;
+    & > p {
+      order: 1;
+    }
+  }
+}
+
+
+.text{
+  @include fontFamily(Rubik);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: $black;
+}
+
+
+.innerContent{
+  max-width: calc($appMediumWidth + $cornerPaddingSum );
+}
+
